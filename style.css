@@ -1,0 +1,65 @@
+@font-face {
+  font-family: '04b_03';
+  src: url('font/04b_03.eot'); /* IE9 Compat Modes */
+  src: url('font/04b_03.woff') format('woff'), /* Modern Browsers */
+       url('font/04b_03.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('font/04b_03.svg') format('svg'); /* Legacy iOS */
+}
+
+body {
+    background-color: #000;
+}
+
+#main {
+    /*centering the div*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    
+    /*text*/
+    font-family: "04b_03";
+    color: #fff;
+    text-align: center;
+}
+
+a:link {
+    color: #38A1F3;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+a:visited {
+    color: #38A1F3;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+a:hover {
+    color: #1c517a;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+a:active {
+    color: #38A1F3;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+footer {
+    /*text*/
+    color: #fff;
+    text-align: center;
+    
+    /*fixed footer*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: #000;
+}
