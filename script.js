@@ -1,4 +1,4 @@
-var frames = [
+const frames = [
     "anim/1.svg",
     "anim/1.svg",
     "anim/1.svg",
@@ -12,19 +12,13 @@ var frames = [
     "anim/4.svg"
 ]
 
-var speed = 150 //in milliseconds
+const speed = 150
 
-var i = 0 //first frame
-var n = frames.length - 1 //frames count
+let index = 0
 
 function animation() {
     setInterval(function(){ 
-        console.log(i)
-        document.getElementById("player").src = frames[i]
-        i += 1
-        
-        if (i > n) {
-            i = 0
-           }
-    }, speed);
+        document.getElementById("player").src = frames[index]
+        index = (index + 1)  % (frames.length - 1)
+    }, speed)
 }
