@@ -19,6 +19,6 @@ let index = 0
 function animation() {
     setInterval(function(){ 
         document.getElementById("player").src = frames[index]
-        index = (index + 1)  % (frames.length)
+        index = (index + 1)  % frames.length
     }, speed)
 }
